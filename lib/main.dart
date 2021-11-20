@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:sgcm/friends.dart';
 import 'package:sgcm/home.dart';
 import 'package:sgcm/inventory.dart';
 import 'package:sgcm/map.dart';
 
 void main() {
-  runApp(const App());
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setPreferredOrientations([ DeviceOrientation.portraitUp ])
+      .then((value) => runApp(const App()));
 }
 
-class App extends StatelessWidget {
+class App extends StatelessWidget{
   const App({ Key? key }) : super(key: key);
 
   @override

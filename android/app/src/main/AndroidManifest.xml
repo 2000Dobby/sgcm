@@ -2,7 +2,7 @@
     package="de.fad.sgcm">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="sgcm"
+        android:label="SGCM"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
