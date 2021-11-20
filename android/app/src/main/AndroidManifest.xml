@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.fad.sgcm">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="sgcm"
         android:icon="@mipmap/ic_launcher">
